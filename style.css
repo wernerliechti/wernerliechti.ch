@@ -333,7 +333,6 @@ h2 {
 }
 
 .startup-logo {
-    background-color: #0a0a0a;
     width: 60px;
     height: 60px;
     border-radius: 8px;
@@ -341,8 +340,36 @@ h2 {
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
-    color: #f97316;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.saynode-logo {
+    background: linear-gradient(135deg, #f97316 0%, #ea6808 100%);
+    color: white;
+}
+
+.chainstaff-logo {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    color: white;
+}
+
+.yzer-logo {
+    background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.liecht-logo {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.painbreaker-logo {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: white;
+    font-size: 1rem;
 }
 
 .startup-card h3 {
