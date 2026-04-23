@@ -89,21 +89,9 @@ ${name}`);
         });
     }
     
-    // Scroll-based header background
+    // Keep header always transparent
     const header = document.querySelector('.header');
-    let lastScrollY = window.scrollY;
-    
-    window.addEventListener('scroll', function() {
-        const currentScrollY = window.scrollY;
-        
-        if (currentScrollY > 100) {
-            header.style.backgroundColor = 'rgba(10, 10, 10, 0.9)';
-        } else {
-            header.style.backgroundColor = 'transparent';
-        }
-        
-        lastScrollY = currentScrollY;
-    });
+    header.style.backgroundColor = 'transparent';
     
     // Intersection Observer for fade-in animations
     const observerOptions = {
