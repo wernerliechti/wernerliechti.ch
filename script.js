@@ -97,9 +97,9 @@ ${name}`);
         const currentScrollY = window.scrollY;
         
         if (currentScrollY > 100) {
-            header.style.backgroundColor = 'rgba(10, 10, 10, 0.95)';
+            header.style.backgroundColor = 'rgba(10, 10, 10, 0.9)';
         } else {
-            header.style.backgroundColor = 'rgba(10, 10, 10, 0.8)';
+            header.style.backgroundColor = 'transparent';
         }
         
         lastScrollY = currentScrollY;
