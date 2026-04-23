@@ -89,9 +89,23 @@ ${name}`);
         });
     }
     
-    // Keep header always transparent
+    // Hide navbar on scroll down, show on scroll up
     const header = document.querySelector('.header');
-    header.style.backgroundColor = 'transparent';
+    let lastScrollY = window.scrollY;
+    
+    window.addEventListener('scroll', function() {
+        const currentScrollY = window.scrollY;
+        
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            // Scrolling down
+            header.classList.add('hidden');
+        } else {
+            // Scrolling up
+            header.classList.remove('hidden');
+        }
+        
+        lastScrollY = currentScrollY;
+    });
     
     // Intersection Observer for fade-in animations
     const observerOptions = {
