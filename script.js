@@ -69,11 +69,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Hide navbar on scroll down, show on scroll up
+    // Hide navbar on scroll down, show on scroll up (desktop only)
     const header = document.querySelector('.header');
     let lastScrollY = window.scrollY;
     
     window.addEventListener('scroll', function() {
+        // Don't hide header on mobile or when mobile menu is active
+        if (window.innerWidth <= 768 || navLinks.classList.contains('active')) {
+            return;
+        }
+        
         const currentScrollY = window.scrollY;
         
         if (currentScrollY > lastScrollY && currentScrollY > 100) {
