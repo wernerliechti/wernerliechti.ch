@@ -376,6 +376,64 @@ h2 {
     color: #ccc;
 }
 
+.about-block {
+    margin-bottom: 2rem;
+}
+
+.about-block p {
+    margin-bottom: 1rem;
+}
+
+.about-block p:last-child {
+    margin-bottom: 0;
+}
+
+.highlight {
+    color: #f97316;
+    font-weight: 600;
+}
+
+.about-expand-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: none;
+    border: 2px solid #f97316;
+    color: #f97316;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 2rem auto;
+}
+
+.about-expand-btn:hover {
+    background-color: #f97316;
+    color: white;
+}
+
+.expand-icon {
+    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.about-expand-btn.expanded .expand-icon {
+    transform: rotate(180deg);
+}
+
+.about-expanded {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.about-expanded.active {
+    max-height: 2000px;
+}
+
 /* Startups Section */
 .startup-grid {
     display: grid;

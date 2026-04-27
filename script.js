@@ -112,6 +112,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// About section expand/collapse functionality
+function toggleAboutContent() {
+    const expandedContent = document.getElementById('about-expanded');
+    const expandBtn = document.querySelector('.about-expand-btn');
+    const expandText = expandBtn.querySelector('.expand-text');
+    
+    if (expandedContent.classList.contains('active')) {
+        expandedContent.classList.remove('active');
+        expandBtn.classList.remove('expanded');
+        expandText.textContent = 'Mehr anzeigen';
+    } else {
+        expandedContent.classList.add('active');
+        expandBtn.classList.add('expanded');
+        expandText.textContent = 'Weniger anzeigen';
+    }
+}
+
 // Mobile menu styles
 const style = document.createElement('style');
 style.textContent = `

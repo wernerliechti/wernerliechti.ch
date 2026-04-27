@@ -161,19 +161,54 @@
             <div class="container">
                 <h2>Über mich</h2>
                 <div class="about-content">
-                    <p>Mit zehn Jahren stand ich jeden Sonntag vor dem Maislabyrinth meines Vaters auf dem Brauchbühl in Lützelflüh. Mein Produkt: gedörrte Apfelringe. Die Äpfel kamen aus dem eigenen Garten, der Strom aus der Steckdose meiner Eltern. Meine Marge war entsprechend erfreulich. Mit drei Dörrex im 8-Stunden-Takt perfektionierte ich meine Produktion und verdiente mein erstes Sackgeld. Dass meine Eltern mich dabei einfach machen liessen, verstehe ich heute als eines der grössten Geschenk, das sie mir mitgeben konnten.</p>
+                    <div class="about-block">
+                        <p>Mit <span class="highlight">zehn Jahren</span> stand ich jeden Sonntag vor dem Maislabyrinth meines Vaters auf dem Brauchbühl in Lützelflüh.</p>
+                        
+                        <p>Mein Produkt: <span class="highlight">gedörrte Apfelringe</span>. Die Äpfel kamen aus dem eigenen Garten, der Strom aus der Steckdose meiner Eltern. Meine Marge war entsprechend erfreulich.</p>
+                        
+                        <p>Mit drei Dörrex im 8-Stunden-Takt perfektionierte ich meine <span class="highlight">Produktion</span> und verdiente mein erstes Sackgeld. Dass meine Eltern mich dabei einfach machen liessen, verstehe ich heute als eines der grössten Geschenk, das sie mir mitgeben konnten.</p>
+                    </div>
                     
-                    <p>Seither war es nie wirklich anders.</p>
+                    <div class="about-block">
+                        <p><strong>Seither war es nie wirklich anders.</strong></p>
+                    </div>
                     
-                    <p>Aufgewachsen auf einem Bauernhof, Matura mit Physik und Mathematik am Gymnasium Burgdorf, Elektrotechnik an der ETH. Nebenbei gründete ich meine erste echte Firma: Liecht.ch, Hochzeits- und Eventvideografie. Das Business lief gut. Das Problem: Jede Hochzeit brauchte mich persönlich. Skalieren war schwierig. Ich brauchte etwas, das ohne mich wachsen kann.</p>
+                    <button class="about-expand-btn" onclick="toggleAboutContent()">
+                        <span class="expand-text">Mehr anzeigen</span>
+                        <span class="expand-icon">↓</span>
+                    </button>
                     
-                    <p>Dann kam Corona, eine gute Idee, und ein Schulkollege mit demselben Antrieb. Gemeinsam mit Renato Schär gründete ich die SayNode Operations AG, eine Software-Agentur mit Fokus auf Mobile Apps und Web3-Lösungen. Heute arbeiten rund 30 Personen in der Schweiz und Portugal für SayNode. Seither sind 2 weitere Startups dazugekommen.</p>
-                    
-                    <p>Bitcoin begegnete mir 2017 während des Studiums. Der Gedanke, dass ein Geldsystem ohne Banken funktionieren kann, hat mich nicht mehr losgelassen. Seitdem beschäftige ich mich intensiv mit Bitcoin, Technologie und Financial Literacy.</p>
-                    
-                    <p>Führung und Leadership haben mich durch die Offiziersausbildung in der Schweizer Armee geprägt und begleiten mich bis heute als Thema. Den Austausch dazu pflege ich unter anderem beim Roundtable Burgdorf und in der Swiss Bitcoin Association, wo ich aktiv mitmache.</p>
-                    
-                    <p>Wenn ich nicht im Büro bin, bin ich draussen. Am liebsten auf dem Hof, in der Werkstatt oder mit der Kamera unterwegs. Meistens mit mehr Projekten gleichzeitig, als vernünftig wäre.</p>
+                    <div class="about-expanded" id="about-expanded">
+                        <div class="about-block">
+                            <p>Aufgewachsen auf einem <span class="highlight">Bauernhof</span>, Matura mit Physik und Mathematik am Gymnasium Burgdorf, Elektrotechnik an der <span class="highlight">ETH</span>.</p>
+                            
+                            <p>Nebenbei gründete ich meine erste echte Firma: Liecht.ch, Hochzeits- und Eventvideografie. Das Business lief gut. Das Problem: Jede Hochzeit brauchte mich persönlich. <span class="highlight">Skalieren</span> war schwierig. Ich brauchte etwas, das ohne mich wachsen kann.</p>
+                        </div>
+                        
+                        <div class="about-block">
+                            <p>Dann kam Corona, eine gute Idee, und ein Schulkollege mit demselben Antrieb.</p>
+                            
+                            <p>Gemeinsam mit Renato Schär gründete ich die <span class="highlight">SayNode Operations AG</span>, eine Software-Agentur mit Fokus auf Mobile Apps und Web3-Lösungen. Heute arbeiten rund 30 Personen in der Schweiz und Portugal für SayNode. Seither sind 2 weitere Startups dazugekommen.</p>
+                        </div>
+                        
+                        <div class="about-block">
+                            <p><span class="highlight">Bitcoin</span> begegnete mir 2017 während des Studiums. Der Gedanke, dass ein Geldsystem ohne Banken funktionieren kann, hat mich nicht mehr losgelassen.</p>
+                            
+                            <p>Seitdem beschäftige ich mich intensiv mit Bitcoin, Technologie und Financial Literacy.</p>
+                        </div>
+                        
+                        <div class="about-block">
+                            <p>Führung und Leadership haben mich durch die Offiziersausbildung in der Schweizer Armee geprägt und begleiten mich bis heute als Thema.</p>
+                            
+                            <p>Den Austausch dazu pflege ich unter anderem beim Roundtable Burgdorf und in der Swiss Bitcoin Association, wo ich aktiv mitmache.</p>
+                        </div>
+                        
+                        <div class="about-block">
+                            <p>Wenn ich nicht im Büro bin, bin ich draussen. Am liebsten auf dem Hof, in der Werkstatt oder mit der Kamera unterwegs.</p>
+                            
+                            <p>Meistens mit mehr Projekten gleichzeitig, als vernünftig wäre.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
