@@ -521,6 +521,11 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.role {
+    color: #f97316;
+    font-weight: 600;
+}
+
 .startup-card p {
     color: #ccc;
     line-height: 1.6;
