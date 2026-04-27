@@ -42,7 +42,32 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-
+    // FAQ Accordion functionality
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            
+            // Close all other questions
+            faqQuestions.forEach(otherQuestion => {
+                if (otherQuestion !== this) {
+                    otherQuestion.setAttribute('aria-expanded', 'false');
+                    otherQuestion.nextElementSibling.classList.remove('active');
+                }
+            });
+            
+            // Toggle current question
+            if (isExpanded) {
+                this.setAttribute('aria-expanded', 'false');
+                answer.classList.remove('active');
+            } else {
+                this.setAttribute('aria-expanded', 'true');
+                answer.classList.add('active');
+            }
+        });
+    });
     
     // Hide navbar on scroll down, show on scroll up
     const header = document.querySelector('.header');
