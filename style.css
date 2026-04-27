@@ -587,6 +587,45 @@ h2 {
     color: white;
 }
 
+.form-success {
+    display: none;
+    background-color: rgba(16, 185, 129, 0.1);
+    border: 1px solid #10b981;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: #10b981;
+    text-align: center;
+    font-weight: 600;
+}
+
+.form-success[data-fs-success-visible] {
+    display: block;
+}
+
+.form-error {
+    display: none;
+    background-color: rgba(239, 68, 68, 0.1);
+    border: 1px solid #ef4444;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: #ef4444;
+    text-align: center;
+    font-weight: 600;
+}
+
+.form-error:not(:empty) {
+    display: block;
+}
+
+.field-error {
+    display: block;
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -633,6 +672,24 @@ h2 {
     background-color: #ea6808;
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(249, 115, 22, 0.3);
+}
+
+.submit-button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.submit-button .button-loading {
+    display: none;
+}
+
+.submit-button[data-fs-submitting] .button-text {
+    display: none;
+}
+
+.submit-button[data-fs-submitting] .button-loading {
+    display: inline;
 }
 
 /* Photography Section */

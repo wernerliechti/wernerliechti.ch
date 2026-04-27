@@ -266,24 +266,37 @@
 
                 <div class="contact-form">
                     <h3>Als Speaker buchen</h3>
-                    <form>
+                    
+                    <div data-fs-success class="form-success">
+                        ✅ Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet. Ich melde mich bald bei Ihnen.
+                    </div>
+                    <div data-fs-error class="form-error"></div>
+                    
+                    <form id="speaker-form">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" data-fs-field required>
+                            <span data-fs-error="name" class="field-error"></span>
                         </div>
                         <div class="form-group">
                             <label for="email">E-Mail</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" data-fs-field required>
+                            <span data-fs-error="email" class="field-error"></span>
                         </div>
                         <div class="form-group">
                             <label for="topic">Thema</label>
-                            <input type="text" id="topic" name="topic" required>
+                            <input type="text" id="topic" name="topic" data-fs-field required>
+                            <span data-fs-error="topic" class="field-error"></span>
                         </div>
                         <div class="form-group">
                             <label for="message">Nachricht</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea id="message" name="message" rows="5" data-fs-field required></textarea>
+                            <span data-fs-error="message" class="field-error"></span>
                         </div>
-                        <button type="submit" class="submit-button">Nachricht senden</button>
+                        <button type="submit" class="submit-button" data-fs-submit-btn>
+                            <span class="button-text">Nachricht senden</span>
+                            <span class="button-loading">Wird gesendet...</span>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -324,5 +337,12 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    <!-- Formspree Integration -->
+    <script>
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { formElement: '#speaker-form', formId: 'mpqkeeja' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
