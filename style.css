@@ -48,13 +48,20 @@ body {
     margin: 0 auto;
 }
 
-.logo-placeholder {
-    color: #f97316;
-    font-weight: 700;
-    font-size: 1.5rem;
-    padding: 8px 16px;
-    border: 2px solid #f97316;
-    border-radius: 4px;
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 40px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
+.logo-image:hover {
+    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(25deg);
 }
 
 .nav-links {
