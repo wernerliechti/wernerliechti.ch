@@ -61,7 +61,7 @@ body {
 }
 
 .logo-image:hover {
-    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(25deg);
+    filter: brightness(0) invert(0.5) sepia(1) saturate(10) hue-rotate(25deg) brightness(1.2);
 }
 
 .nav-links {
