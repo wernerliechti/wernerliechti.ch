@@ -42,52 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Form submission handling
-    const contactForm = document.querySelector('.contact-form form');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const topic = formData.get('topic');
-            const message = formData.get('message');
-            
-            // Create mailto link
-            const subject = encodeURIComponent(`Speaking Anfrage: ${topic}`);
-            const body = encodeURIComponent(`Hallo Werner,
 
-Name: ${name}
-E-Mail: ${email}
-Thema: ${topic}
-
-Nachricht:
-${message}
-
-Freundliche Grüsse,
-${name}`);
-            
-            const mailtoLink = `mailto:hello@wernerliechti.ch?subject=${subject}&body=${body}`;
-            
-            // Open email client
-            window.location.href = mailtoLink;
-            
-            // Show success message
-            const submitButton = this.querySelector('.submit-button');
-            const originalText = submitButton.textContent;
-            submitButton.textContent = 'E-Mail Client geöffnet!';
-            submitButton.style.backgroundColor = '#10b981';
-            
-            setTimeout(() => {
-                submitButton.textContent = originalText;
-                submitButton.style.backgroundColor = '#f97316';
-                this.reset();
-            }, 3000);
-        });
-    }
     
     // Hide navbar on scroll down, show on scroll up
     const header = document.querySelector('.header');
