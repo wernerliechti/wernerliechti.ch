@@ -170,6 +170,7 @@ body {
 }
 
 .hero-text h1 {
+    font-family: 'Playfair Display', 'Tiempos Headline', serif;
     font-size: clamp(3rem, 8vw, 5rem);
     font-weight: 700;
     line-height: 1.1;
