@@ -749,21 +749,24 @@ h2 {
 
 .photo-button {
     display: inline-block;
-    background-color: transparent;
-    color: #f97316;
-    padding: 16px 32px;
+    background-color: #f97316;
+    color: white;
+    padding: 20px 40px;
     text-decoration: none;
-    font-weight: 600;
-    border: 2px solid #f97316;
-    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 50px;
     transition: all 0.3s ease;
-    font-size: 1.1rem;
+    text-shadow: none;
+    box-shadow: none;
+    border: 3px solid #f97316;
 }
 
 .photo-button:hover {
-    background-color: #f97316;
-    color: white;
-    transform: translateY(-2px);
+    background-color: transparent;
+    color: #f97316;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(249, 115, 22, 0.4);
 }
 
 /* Footer */
@@ -791,17 +794,25 @@ h2 {
 }
 
 .social-links a {
-    color: #f97316;
+    display: inline-block;
+    background-color: #f97316;
+    color: white;
+    padding: 20px 40px;
     text-decoration: none;
-    padding: 8px 12px;
-    border: 1px solid #f97316;
-    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 50px;
     transition: all 0.3s ease;
+    text-shadow: none;
+    box-shadow: none;
+    border: 3px solid #f97316;
 }
 
 .social-links a:hover {
-    background-color: #f97316;
-    color: white;
+    background-color: transparent;
+    color: #f97316;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(249, 115, 22, 0.4);
 }
 
 .contact-info a {
