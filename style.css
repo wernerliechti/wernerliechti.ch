@@ -493,13 +493,6 @@ h2 {
     margin-bottom: 4rem;
 }
 
-.speaking-gallery h3 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    color: white;
-}
-
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -508,17 +501,14 @@ h2 {
 
 .gallery-item {
     position: relative;
-    background-color: #0a0a0a;
     border-radius: 12px;
     overflow: hidden;
-    border: 2px solid transparent;
     transition: all 0.3s ease;
 }
 
 .gallery-item:hover {
-    border-color: #f97316;
     transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(249, 115, 22, 0.2);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
 .gallery-item img {
@@ -543,34 +533,15 @@ h2 {
     font-weight: 600;
     font-size: 0.9rem;
     text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.references {
-    margin-bottom: 4rem;
-    text-align: center;
+.gallery-item:hover .gallery-caption {
+    opacity: 1;
 }
 
-.references h3 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: white;
-}
 
-.references ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.references li {
-    background-color: #0a0a0a;
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    color: #ccc;
-    border: 1px solid #333;
-}
 
 /* FAQ Section */
 .faq {
@@ -784,10 +755,7 @@ h2 {
         grid-template-columns: 1fr 1fr;
     }
     
-    .references ul {
-        flex-direction: column;
-        align-items: center;
-    }
+
     
     .footer-content {
         flex-direction: column;
