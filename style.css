@@ -714,23 +714,27 @@ h2 {
     width: 100%;
     background-color: #f97316;
     color: white;
-    padding: 16px 32px;
-    border: none;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 1.1rem;
+    padding: 20px 40px;
+    border: 3px solid #f97316;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-shadow: none;
+    box-shadow: none;
 }
 
 .submit-button:hover {
-    background-color: #ea6808;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(249, 115, 22, 0.3);
+    background-color: transparent;
+    color: #f97316;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(249, 115, 22, 0.4);
 }
 
 .submit-button:disabled {
     background-color: #666;
+    border-color: #666;
     cursor: not-allowed;
     transform: none;
 }
